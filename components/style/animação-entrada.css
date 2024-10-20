@@ -1,0 +1,11 @@
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: opacity 0.5s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+}
