@@ -5,6 +5,7 @@
   box-sizing: border-box;
   color: white;
   scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 body {
