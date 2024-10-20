@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Prompt", sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f5f5f5;
@@ -14,8 +17,14 @@ body {
 
 /* Header e navegação */
 header {
-    background-color: #fff;
+    background: linear-gradient(to right, #ffa500, #ff4500);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+header .search-section {
+    background: linear-gradient(to right, #ffa500, #ff4500);
+    color: #fff;
+    padding: 3rem 5%;
+    text-align: center;
 }
 
 nav {
@@ -30,7 +39,8 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #167db7;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 nav ul {
@@ -48,19 +58,14 @@ nav ul li a {
 }
 
 .btn-cadastro {
-    background-color: #167db7;
+    background-color: #ffa500;
     color: #fff !important;
     padding: 0.5rem 1rem;
     border-radius: 4px;
 }
 
 /* Seção de busca */
-.search-section {
-    background-color: #167db7;
-    color: #fff;
-    padding: 3rem 5%;
-    text-align: center;
-}
+
 
 .search-section h1 {
     font-size: 2rem;
@@ -83,7 +88,7 @@ nav ul li a {
 }
 
 #search-form button {
-    background-color: #ff6340;
+    background-color: #ffa500;
     color: #fff;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -140,8 +145,19 @@ footer {
     }
 }
 
+.job-header, .job-details, .job-description, .btn-apply  {
+    padding: 20px;
+}
+
+.job-box {
+    box-shadow: 0px 0px 10px #333;
+    border-radius: 20px ;
+    margin-bottom: 2rem;
+}
+
 .btn-apply:hover {
     background-color: #e55a3a;
+    border-radius: 10px;
 }
 
 /* Estilização adicional para melhorar a aparência */
@@ -186,6 +202,7 @@ footer {
     .btn-apply {
         width: 100%;
         text-align: center;
+        
     }
 }
 
