@@ -8,7 +8,7 @@
 }
 
 body {
-
+  overflow-y: hidden;
   font-family: 'Arial', sans-serif;
   background-color: #fdfdfd;
   color: #000;
@@ -192,29 +192,7 @@ h1 .orange {
   transform: scale(100) translateX(2px);
 }
 
-.title-home {
-  font-size: 65px;
-}
-
-/* styles.css */
-.typewriter {
-  font-family: monospace;
-  font-size: 24px;
-}
-
-#texto-digitado {
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .title-home #texto-digitado {
   display: inline-block;
-  white-space: nowrap;
-  border-right: 2px solid #000; /* Simula um cursor piscando */
-  animation: piscar 0.7s step-end infinite;
-}
-
-@keyframes piscar {
-  from, to { border-color: transparent }
-  50% { border-color: #000; }
+  white-space: pre-wrap;
 }
